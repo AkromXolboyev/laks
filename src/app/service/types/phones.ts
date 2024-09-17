@@ -35,3 +35,20 @@ export interface Computers {
   brand: string;
   img: string;
 }
+
+
+export interface Stearing{
+    img: string;
+    title: string;
+    price: string;
+    brand: string;
+    id: number;
+}
+
+export interface Washing{
+    id: number;
+    title: string;
+    img: string;
+    price: string;
+    brand: string;
+}

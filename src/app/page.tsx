@@ -41,7 +41,7 @@ export default async function Home() {
           />
         </div>
         <div className="pt-[17px] pb-[17px] w-[280px] flex justify-between p-5">
-          <Link href={"/quloqchinlar"}>Quloqchinlar</Link>
+          <Link href={"/quloqchinlar"}>Phones</Link>
           <Image
             src={"/arrow.svg"}
             alt={"arrow"}
@@ -51,7 +51,7 @@ export default async function Home() {
           />
         </div>
         <div className="pt-[17px] pb-[17px] w-[280px] flex justify-between p-5">
-          <Link href={"/fleshka"}>Xotira Kartalari</Link>
+          <Link href={"/fleshka"}>washingM</Link>
           <Image
             src={"/arrow.svg"}
             alt={"arrow"}
@@ -60,7 +60,7 @@ export default async function Home() {
             priority
           />
         </div>
-        <div className="pt-[17px] pb-[17px] w-[280px] flex justify-between p-5">
+        {/* <div className="pt-[17px] pb-[17px] w-[280px] flex justify-between p-5">
           <Link href={"/aksesuarlar"}>Smartfon aksesuarlari</Link>
           <Image
             src={"/arrow.svg"}
@@ -69,9 +69,9 @@ export default async function Home() {
             height={24}
             priority
           />
-        </div>
+        </div> */}
         <div className="pt-[17px] pb-[17px] w-[280px] flex justify-between p-5">
-          <Link href={"/gadjet"}>Gadjetlar</Link>
+          <Link href={"/gadjet"}>Stearing</Link>
           <Image
             src={"/arrow.svg"}
             alt={"arrow"}
@@ -80,7 +80,7 @@ export default async function Home() {
             priority
           />
         </div>
-        <div className="pt-[17px] pb-[17px] w-[280px] flex justify-between p-5">
+        {/* <div className="pt-[17px] pb-[17px] w-[280px] flex justify-between p-5">
           <Link href={"/uskunalar"}>Quvvatlovchi uskunalar</Link>
           <Image
             src={"/arrow.svg"}
@@ -89,9 +89,9 @@ export default async function Home() {
             height={24}
             priority
           />
-        </div>
+        </div> */}
         <div className="pt-[17px] pb-[17px] w-[280px] flex justify-between p-5">
-          <Link href={"/kabellar"}>Kabellar</Link>
+          <Link href={"/kabellar"}>Sports</Link>
           <Image
             src={"/arrow.svg"}
             alt={"arrow"}
