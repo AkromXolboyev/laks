@@ -104,7 +104,7 @@ export default async function Home() {
 
       {/* Banner ko'rsatish */}
       <div>
-        <Carousel>
+        <Carousel className="z-10">
           <CarouselContent>
             <CarouselItem>
               <img

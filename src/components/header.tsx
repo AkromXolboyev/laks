@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 export const Header = () => {
   return (
-    <div className="bg-slate-50 p-5 text-3xl justify-center items-center fixed w-full flex">
+    <div className="bg-white p-5 text-3xl justify-center items-center fixed w-full flex  z-10">
       {/* Logo Section */}
       <div>
       <Image
@@ -16,7 +16,7 @@ export const Header = () => {
           className="dark:invert ml-3"
           width={115}
           height={28}
-          priority // Priority is fine for the logo
+          priority
         />
       </div>
 
@@ -37,7 +37,7 @@ export const Header = () => {
         </Button>
       </div>
 
-      {/* Language and Icons Section */}
+     
       <div>
         <Button variant="ghost">
           <Image
