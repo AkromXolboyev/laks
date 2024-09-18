@@ -55,8 +55,6 @@
 // };
 
 // export default ProductCard;
-
-
 'use client'; // Bu yerda client component ekanligini belgilaymiz
 
 import Image from 'next/image';
@@ -75,13 +73,12 @@ interface Product {
 }
 
 export interface ProductCardProps {
-  product: Product;
+  product: Product | null; // product null bo'lishi mumkin
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const [cart, setCart] = useState<Product[]>([]);
 
-  // LocalStorage'dan cartni olish uchun useEffect ishlatamiz
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const storedCart = localStorage.getItem('cart');
@@ -89,7 +86,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         setCart(JSON.parse(storedCart));
       }
     }
-  }, []); // Faqat component birinchi marta yuklanganda ishga tushadi
+  }, []);
 
   const addToCart = (item: Product) => {
     const updatedCart = [...cart, item];
@@ -97,6 +94,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     localStorage.setItem('cart', JSON.stringify(updatedCart));
     alert(`${item.title} savatchaga qo'shildi!`);
   };
+
+  // Product borligini tekshiramiz
+  if (!product) {
+    return <div>Loading...</div>; // Yoki xato haqida bildirish
+  }
 
   return (
     <div className="bg-white w-[264px] text-center h-[464px] gap-5 p-5 rounded-md" key={product.id}>
@@ -109,7 +111,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <h3 className="mt-1">{product.brand}</h3>
       <Image src="/stars.svg" alt="icon" width={100} height={24} priority className="text-center m-auto" />
       <strong className="block">{product.price}</strong>
-      <button onClick={() => addToCart(product)} className="pl-[74px] pr-[74px] bg-primary p-3 rounded-md">
+      <button
+        onClick={() => addToCart(product)}
+        className="pl-[74px] pr-[74px] bg-primary p-3 rounded-md text-white"
+      >
         Savatchaga
       </button>
     </div>
