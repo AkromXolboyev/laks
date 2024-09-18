@@ -7,7 +7,7 @@ const Fleshka = async () => {
   const data = await getWashing();
 
   return (
-    <div className="mt-[100px]">
+    <div className="mt-[100px] container">
       <div className="flex gap-5 p-5 w-[1440px] container">
         {/* Navigatsiya linklari */}
         <div className="flex gap-5 p-5 w-[1440px] container">

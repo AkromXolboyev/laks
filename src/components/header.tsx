@@ -9,7 +9,7 @@ import { Search } from "./search/search";
 
 export const Header = () => {
   return (
-    <div className="bg-white p-5 text-3xl justify-center items-center fixed w-full flex gap-8 z-50">
+    <div className="bg-white p-3 text-3xl justify-center items-center fixed w-full flex gap-5 z-50">
       <div>
         <Image
           src="/logo.svg"
@@ -21,7 +21,7 @@ export const Header = () => {
         />
       </div>
 
-      <div className="ml-[53px] mr-6 flex items-center w-[900px] border border-gray-300 rounded-md ">
+      <div className="ml-[53px] mr-6 flex items-center w-[890px] border border-gray-300 rounded-md ">
         <div className=" w-full">
           <Search />
         </div>
@@ -65,7 +65,7 @@ export const Header = () => {
           height={50}
           priority={false} 
         />
-          Savatchani ko'rish
+          Savatcha
         </button>
       </Link>
     </div>

@@ -30,7 +30,7 @@ export const Search = () => {
 
   return (
     <div className="relative">
-      <div className="flex max-w-[932px] w-full border h-[47px]  rounded-lg border-primary justify-between items-center">
+      <div className="flex max-w-[890px] w-full border h-[47px]  rounded-lg border-primary justify-between items-center">
        
         <Input
           className=""
@@ -38,7 +38,7 @@ export const Search = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
           value={searchTerm}
         />
-        <Button className="rounded-l-none w-28 h-full">Filter</Button>
+        <Button className="rounded-l-none w-28  h-full">Filter</Button>
       </div>
 
       <div className="absolute top-11 w-full z-50">

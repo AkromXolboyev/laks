@@ -227,7 +227,7 @@ const CatalogDetail: NextPage<CatalogProps> = ({ params }) => {
         <p className="p-5 bg-slate-200 rounded-md">apple</p>
       </div>
       {datalar.map((item) => (
-        <div key={item.id} className="flex items-center">
+        <div key={item.id} className="flex items-center mb-10">
           <div className="w-[600px]">
             <img className="" src={item.img} alt={`Product ${item.id}`} />
           </div>

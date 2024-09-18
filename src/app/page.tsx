@@ -33,7 +33,7 @@ export default async function Home() {
           </div>
         </Link> */}
         <Link href={"/planshetlar"}>
-          <div className="pt-[17px] pb-[17px] w-[280px] flex justify-between mt-4 p-5 bg-slate-300 rounded-md mb-4 hover:bg-green-400">
+          <div className="pt-[17px] pb-[17px] w-[280px] flex justify-between mt-8 p-5 bg-slate-300 rounded-md mb-4 hover:bg-green-400">
             <h1> Computers</h1>
             <Image
               src={"/arrow.svg"}
