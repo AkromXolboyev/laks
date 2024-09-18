@@ -3,7 +3,6 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
-// import { Search, Filter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Search } from "./search/search";
 
@@ -21,24 +20,11 @@ export const Header = () => {
         />
       </div>
 
-      <div className="ml-[53px] mr-6 flex items-center w-[890px] border border-gray-300 rounded-md ">
+      <div className="ml-[53px] mr-6 flex items-center w-[800px] border border-gray-300 rounded-md ">
         <div className=" w-full">
           <Search />
         </div>
       </div>
-
-      <div>
-        <Button>
-          <Image
-            src="/uzb.svg"
-            alt="uzb-flag"
-            width={100}
-            height={40}
-            priority
-          />
-        </Button>
-      </div>
-
       <div className="flex gap-2 ml-5 items-center border border-green-500 p-2 rounded-md">
         <Image
           src="/note.svg"

@@ -1,4 +1,3 @@
-// app/fleshka/page.tsx
 import React from 'react';
 import { getWashing } from '../service/query/get-washing';
 import ProductCard from '@/pages/product-card2';
@@ -9,7 +8,7 @@ const Fleshka = async () => {
   return (
     <div className="mt-[100px] container">
       <div className="flex gap-5 p-5 w-[1440px] container">
-        {/* Navigatsiya linklari */}
+       
         <div className="flex gap-5 p-5 w-[1440px] container">
         <Link href={"/"} className="p-5 bg-slate-200 rounded-md">
           bosh sahifa

@@ -47,7 +47,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   };
 
   if (loading) {
-    return <div>Loading...</div>; // loading holati
+    return <div>Loading...</div>;
   }
 
   return (

@@ -17,7 +17,7 @@ export const GetCarusel = async (): Promise<CaruselType[]> => {
 
     return data;
   } catch (error) {
-    // throw new Error(`Error fetching carusel data: ${(error as Error).message}`);
+   
     console.error("error fetchin banners:", error);
     return [];
   }
