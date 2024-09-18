@@ -1,16 +1,17 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 import { Input } from "@/components/ui/input";
-import { Search, Filter } from "lucide-react";
+// import { Search, Filter } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Search } from "./search/search";
 
 export const Header = () => {
   return (
-    <div className="bg-white p-5 text-3xl justify-center items-center fixed w-full flex  z-10">
-      {/* Logo Section */}
+    <div className="bg-white p-5 text-3xl justify-center items-center fixed w-full flex gap-8 z-50">
       <div>
-      <Image
+        <Image
           src="/logo.svg"
           alt="logo"
           className="dark:invert ml-3"
@@ -20,26 +21,14 @@ export const Header = () => {
         />
       </div>
 
-      {/* Search Bar */}
-      <div className="ml-[53px] mr-6 flex items-center w-[900px] border border-gray-300 rounded-md overflow-hidden">
-        <div className="relative flex-1">
-          <span className="absolute inset-y-0 left-2 flex items-center text-gray-400">
-            <Search className="h-5 w-5" />
-          </span>
-          <Input
-            placeholder="Qidirish"
-            className="pl-10 h-[47px] focus:ring-0 border-primary border-[1px]"
-          />
+      <div className="ml-[53px] mr-6 flex items-center w-[900px] border border-gray-300 rounded-md ">
+        <div className=" w-full">
+          <Search />
         </div>
-        <Button className="flex items-center gap-2 bg-primary text-white h-[47px] px-4">
-          <Filter className="h-4 w-4" />
-          Filter
-        </Button>
       </div>
 
-     
       <div>
-        <Button variant="ghost">
+        <Button>
           <Image
             src="/uzb.svg"
             alt="uzb-flag"
@@ -50,13 +39,13 @@ export const Header = () => {
         </Button>
       </div>
 
-      <div className="flex gap-2 ml-5 items-center">
+      <div className="flex gap-2 ml-5 items-center border border-green-500 p-2 rounded-md">
         <Image
           src="/note.svg"
           alt="note"
           width={24}
           height={24}
-          priority={false} // No need for priority on small icons
+          priority={false} 
         />
         <h1>Kirish</h1>
         <Image
@@ -64,9 +53,21 @@ export const Header = () => {
           alt="user"
           width={24}
           height={24}
-          priority={false} // No need for priority
+          priority={false} 
         />
       </div>
+      <Link href="/cart">
+        <button className="p-2 bg-primary text-white rounded-md text-[20px] flex">
+        <Image
+          src="/cart.svg"
+          alt="user"
+          width={50}
+          height={50}
+          priority={false} 
+        />
+          Savatchani ko'rish
+        </button>
+      </Link>
     </div>
   );
 };
